@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+body {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(/images/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .game {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+  
+  
+
+#player-cards {
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    
+  }
+  
+#dealer-cards {
+    margin: 5px;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+  }
+
+img{
+    width: 10em;
+   height: 12em;
+   background: transparent;
+   border-radius: 10px;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+   padding: 5px;
+   margin: 5px;
+   display: inline-block;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+.hidden{
+  display: none;
+}
+
+#hit, #stay {
+  display: none;
+}
+
+
+button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1em;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+h1{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+      to right,
+      #a38149 0,
+      #e1c881 22%, 
+      #e1cc88 45%,
+      #d9c87e 50%,
+      #e8d396 55%,
+      #c99e55 78%,
+      #a38149 100%
+  );
+color: transparent;
+-webkit-background-clip: text;
+}
+
+.yScore{
+  display: ruby-base;
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: 50px;
+    background-image: linear-gradient(
+        to right,
+        #a38149 0,
+        #e1c881 22%, 
+        #e1cc88 45%,
+        #d9c87e 50%,
+        #e8d396 55%,
+        #c99e55 78%,
+        #a38149 100%
+    );
+  color: transparent;
+  -webkit-background-clip: text;
+  padding-bottom: 5px; 
+}
+
+
+.dScore{
+  display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: 50px;
+    background-image: linear-gradient(
+        to right,
+        #a38149 0,
+        #e1c881 22%, 
+        #e1cc88 45%,
+        #d9c87e 50%,
+        #e8d396 55%,
+        #c99e55 78%,
+        #a38149 100%
+    );
+  color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block; 
+  padding: 5px; 
+}
+    
+
+#game-message {
+  font-size: 30px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #a38149 0,
+    #e1c881 22%, 
+    #e1cc88 45%,
+    #d9c87e 50%,
+    #e8d396 55%,
+    #c99e55 78%,
+    #a38149 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+
+  display: block; /* Ensure the element is always visible */
+}
+
+.pop-up {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, translate 0.3s;
+  animation: popup 1s ease-in-out 3;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+#player-score{
+
+    font-size: 30px;
+}
+
+#dealer-score{
+    font-size: 30px;
+}

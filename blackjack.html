@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blackjack</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+  <body>
+    <div class="game" id="jack">
+    <h1>Dealer</h1>
+    <h4 class="dScore">Dealer score: <span id="dealer-score" class="hidden">0</span></h4>
+    <div id="game">
+      <div id="game-message" class="message"></div>
+      <div id="dealer-cards" class="card-container"></div>
+      <div id="player-cards" class="card-container"></div>
+      <div id="buttons">
+        <button id="start-game">Start Game</button>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+      </div>
+        <h4 class="yScore">Your score: <span id="player-score" class="hidden">>0</span></h4>
+    </div>
+    <script src="blackjack.js"></script>
+  </body>
+</html>
